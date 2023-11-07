@@ -644,12 +644,19 @@ th {
     border: none;
     border-radius: 1rem;
     color: var(--blanco);
+    cursor: pointer;
 }
 
 
 
 
 /* ------- Sección Perfil ------- */
+
+.main_perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
 .perfil {
     display: flex;
@@ -699,4 +706,104 @@ th {
 
 .perfil_form-submit input:hover {
     background-color: var(--rojoOscuro);
+}
+
+.main_perfil-citasTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--azul);
+    margin-top: 5rem;;
+}
+
+.main_perfil-citas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content:center;
+    width: 50rem;
+    margin: 3rem auto 6rem auto;
+}
+
+.perfil_citas-card {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   background-color: var(--rojo);
+   border-radius: 1rem;
+   padding:1rem;
+}
+
+
+
+
+/* ------- Sección Editar Cita ------- */
+
+/*  Esta sección está heredando estilos de la sección Admin.
+    Solo se modifica el estilo de los botones.
+*/
+
+
+.form_submit_delete {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+
+
+/* ------- Sección Pago ------- */
+
+/*  Esta sección está heredando estilos de la sección Admin.
+    Solo se modifican estilos de los inputs
+*/
+
+
+.main_pago {
+    display: flex;
+    justify-content: center;
+    padding: 13rem;
+}
+
+.main_pago-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.main_pago-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--azul);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.pago_input-contenedor {
+    display: flex;
+    gap: 1rem;
+    border: solid 1px #b0cbcb;
+    width: 25rem;
+}
+
+.pago_input {
+    border:none;
+    width: 100%;
+    padding: 1rem;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border:none;
+}
+
+.input_interior {
+    width: 100%;
+}
+
+.material-symbols-outlined {
+    color:#7a908f
 }
